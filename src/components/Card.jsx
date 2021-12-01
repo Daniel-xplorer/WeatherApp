@@ -1,9 +1,9 @@
 import React from 'react';
 import MinCard from './minCard';
 
+//funcion base de la card
 
-export default function Card(props) {
-  // acá va tu código
+export default function Card(props) { //con el export, esportamos de una vez la funcion para ser utilizada por cards
   return <div className="card">
     <div className="cardHead">
       <button onClick={props.onClose} className="close">x</button>
@@ -14,4 +14,7 @@ export default function Card(props) {
     </div>
   </div>
 };
+
+//se retorna el modulo que será utilizado en el dom del siguiente modulo
+//se usa los madulos necesarios como MinCard, dandoles sus props o argumentos dentro de la etiqueta
 

@@ -1,8 +1,9 @@
 import React from 'react';
 import Card from "./Card"
+
+//este modulo llevará el los modulos de card con las diferentes ciudades
+
 export default function Cards(props) {
-  // acá va tu código
-  // tip, podés usar un map
   const ciudades = props.cities;
   return <div className="todasLasCiudades" >
     {ciudades.map((ciudad) => <Card
@@ -15,3 +16,5 @@ export default function Cards(props) {
     />)} 
   </div>
 };
+//para cada ciudad se usa map. y se crea un modulo Card por cada una de las ciudades qeu entran por props
+//esos valores estan en data y pasan por App.js
