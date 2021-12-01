@@ -2,8 +2,12 @@
 
 export default function MinCard (props){ //recordar que simpre las funciones jsx deben comenzar con mayuscula, que que son como clases
     return(
-    <div>
-        <h4>{props.state}</h4>
-        <span>{props.valuestate}</span>
+    <div className="minCard">
+        <div className="datos">
+            <span className="minCardTitle">{props.state}</span>
+        </div>
+        <div className="datos" >
+            <span className="valueT">{`${Math.floor(props.valuestate)}°`}</span>
+        </div>
     </div>
 )};

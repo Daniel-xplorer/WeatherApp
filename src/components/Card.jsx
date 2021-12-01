@@ -6,8 +6,10 @@ import MinCard from './minCard';
 export default function Card(props) { //con el export, esportamos de una vez la funcion para ser utilizada por cards
   return <div className="card">
     <div className="cardHead">
-      <button onClick={props.onClose} className="close">x</button>
+      <button onClick={props.onClose} className="closeButton">x</button>
       <h1 className="cityName">{props.name}</h1>
+    </div>
+    <div className="cardContentd">
     <MinCard state="min" valuestate={props.min}/>
     <MinCard state="MAX" valuestate={props.max}/>
       <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="imagen del clima"></img>
