@@ -1,4 +1,6 @@
 import React from 'react';
+import MinCard from './minCard';
+
 
 export default function Card(props) {
   // acá va tu código
@@ -6,15 +8,10 @@ export default function Card(props) {
     <div className="cardHead">
       <button onClick={props.onClose} className="close">x</button>
       <h1 className="cityName">{props.name}</h1>
-    </div>
-      <h4>min</h4>
-      <span> {props.min}</span>
-    <div>
-    </div>
-      <h4>MAX</h4>
-      <span> {props.max}</span>
-    <div>
+    <MinCard state="min" valuestate={props.min}/>
+    <MinCard state="MAX" valuestate={props.max}/>
       <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="imagen del clima"></img>
     </div>
   </div>
 };
+
