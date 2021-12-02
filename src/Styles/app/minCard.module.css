@@ -1,0 +1,6 @@
+.minCard{
+    flex-direction: column;
+}
+.minCard > span {
+    font-Size: 3rem;
+}

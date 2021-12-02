@@ -24,7 +24,7 @@ function App() {
         />
       </div>
       <hr />
-      <div>
+      <div style={{display: 'inline-block'}}>
         <SearchBar
           onSearch={(ciudad) => alert(ciudad)}
         />

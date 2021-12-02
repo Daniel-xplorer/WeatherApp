@@ -1,0 +1,18 @@
+.close {
+    background-color: var(--btn-close-Red) ;
+    color: white;
+    border: 0;
+    border-radius: 0.2em;
+    font-family:monospace;
+    margin: 3px;
+    right: 0.2px;
+    position: absolute;
+    align-items: center;
+
+    transition: 0.25s;
+}
+.close:hover {
+    color: var(--btn-close-Red);
+    background-color: white;
+
+}
