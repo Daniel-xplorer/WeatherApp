@@ -7,8 +7,8 @@ export default function SearchBar(props) {
     props.onSearch(inputt.value);
   }
   
-  return <div className="divInputCity">
-    <input id="inputCity" type="text" />
-    <button type="button" onClick={ononclick}>Agregar</button>
+  return <div className="divInputCity" style={{display: 'flex', textaling:"center" }}>
+    <input id="inputCity" className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style={{maxWidth:"500px"}}/>
+    <button className="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={ononclick}>Agregar</button>
   </div>
 };

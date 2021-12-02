@@ -1,5 +1,8 @@
-@import url("./Styles/app.css.components/card.component.css");
-@import url("./Styles/app.css.components/minCard.component.css");
+
+:root{
+  --btn-close-Red: #d62828;
+}
+»/»* Las variables en css se describen así
 
 body {
   margin: 0;
