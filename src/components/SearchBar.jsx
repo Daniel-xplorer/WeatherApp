@@ -12,6 +12,7 @@ export default function SearchBar(props) {
     var input = document.getElementById("inputCity")
     setSearch(input.value)
     props.onSearch(input.value);
+    console.log(stateSearch)
     input.value="";
   }
   
