@@ -7,14 +7,14 @@ import {cities}  from './initial_data.js';
 import NavBar from './components/Nav';
 
 
-const api_key = process.env.REACT_APP_API_KEY; //variable de entorno
+//const api_key = process.env.REACT_APP_API_KEY; //variable de entorno
 function App() {
   const [stateCities, setCities] = useState(cities)
   
   
   const onSearch = (input) => {
     const nameCity = input;
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${nameCity}&appid=${api_key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${nameCity}&appid=9cbfb0a7f2bdee7e1a3fc6daa817cedc&units`)
     .then(response => {
       if(response.status === 404){
         return alert("La ciudad ingresada no existe")
