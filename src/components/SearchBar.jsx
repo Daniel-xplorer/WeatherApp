@@ -11,12 +11,13 @@ export default function SearchBar(props) {
     
     var input = document.getElementById("inputCity")
     setSearch(input.value)
-    props.onSearch(input);
+    props.onSearch(input.value);
+    input.value="";
   }
   
   
-  return <div className={SearchBarStyle.searchBar} style={{display: 'flex', textaling:"center" }}>
-    <input id="inputCity" />
-    <button onClick={ClickChangeState}>Agregar</button>
+  return <div className={SearchBarStyle.searchBar} >
+    <input id="inputCity" className={SearchBarStyle.input} onSubmit={ClickChangeState}/>
+    <button onClick={ClickChangeState} className={SearchBarStyle.button}>Agregar</button>
   </div>
 };

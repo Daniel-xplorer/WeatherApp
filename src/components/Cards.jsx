@@ -9,12 +9,12 @@ export default function Cards(props) {
     return (<div className={stileCardsBar.cardsBar}>
       {props.cities.map((ciudad) => <Card
         key = {ciudad.id}
-        max = {ciudad.main.temp_max}
-        min = {ciudad.main.temp_min}
+        max = {ciudad.main.temp_max - 273}
+        min = {ciudad.main.temp_min - 273}
         name = {ciudad.name}
         img = {ciudad.weather[0].icon}
-        deleteCard = {props.deleteCard}
         id = {ciudad.id}
+        deleteCard = {props.deleteCard}//se menciona esta prop con la entrada de la props de el modulo anterior
       />)} 
     </div>)
 }else return <div>no hay ciudades</div>;
