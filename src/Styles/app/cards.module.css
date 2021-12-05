@@ -1,8 +1,12 @@
 .cardsBar{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    display: flex;
     
     justify-items:center;
+
+    margin-top: 30px;
+
 
 
 }
