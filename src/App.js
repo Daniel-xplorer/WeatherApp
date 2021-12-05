@@ -7,7 +7,7 @@ import {cities}  from './initial_data.js';
 import NavBar from './components/Nav';
 
 
-//const api_key = process.env.REACT_APP_API_KEY; //variable de entorno
+//const api_key = proocess.env.REACT_APP_API_KEY; //variable de entorno
 function App() {
   const [stateCities, setCities] = useState(cities)
   
