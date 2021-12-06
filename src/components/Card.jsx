@@ -18,11 +18,11 @@ export default function Card(props) { //con el export, esportamos de una vez la 
       <h2 className={cardStyle.cityName}>{props.name}</h2>
     </div>
     <div className={cardStyle.cardContent}>
-    <MinCard state="min" valuestate={props.min}/>
-    <MinCard state="MAX" valuestate={props.max}/>
+      <MinCard state="min" valuestate={props.min}/>
+      <MinCard state="MAX" valuestate={props.max}/>
       <img src={`http://openweathermap.org/img/wn/${props.img}@2x.png`} alt="imagen del clima"></img>
     </div>
-  </div>
+    </div>
   
 };
 
