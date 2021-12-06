@@ -1,0 +1,23 @@
+.navBar{
+    display: grid;
+    grid-template-columns: 5% auto 20%;
+    text-align: center;
+    align-items: center;
+
+    background-color: var(--nav-back-purple);
+    border-radius: 12px;
+    margin: 2px 0px 5px 0px;
+    height: 6rem;
+
+}
+.iconCount{
+
+}
+.icon{
+    width: 50px;
+    border-radius: 5px;
+}
+.title{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}

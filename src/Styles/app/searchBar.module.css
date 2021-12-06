@@ -1,0 +1,20 @@
+.searchBar{
+    display: flex;
+    height: 50%;
+}
+.input{
+    border-radius: 20px;
+}
+.button{
+    border-radius: 20px;
+    font-family: 'Roboto Slab';
+    background-color: white;
+    border: 0;
+
+    transition: 0.25s;
+}
+.button:hover{
+    opacity: 5;
+    background-color: transparent;
+    color: white;
+}

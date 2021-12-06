@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import SearchBarStyle from "../Styles/app/searchBar.module.css"
 
 export default function SearchBar(props) {
-  // acá va tu código
-  function ononclick (){
-    let inputt = document.getElementById("inputCity");
-    props.onSearch(inputt.value);
+  const[stateSearch, setSearch] = useState({})
+
+
+
+
+  function ClickChangeState (){
+    
+    var input = document.getElementById("inputCity")
+    setSearch(input.value)
+    props.onSearch(input.value);
+    console.log(stateSearch)
+    input.value="";
   }
   
-  return <div style={{display: 'flex', textaling:"center" }}>
-    <input id="inputCity" className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style={{maxWidth:"500px"}}/>
-    <button className="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={ononclick}>Agregar</button>
+  
+  return <div className={SearchBarStyle.searchBar} >
+    <input id="inputCity" className={SearchBarStyle.input} onSubmit={ClickChangeState}/>
+    <button onClick={ClickChangeState} className={SearchBarStyle.button}>Agregar</button>
   </div>
 };
