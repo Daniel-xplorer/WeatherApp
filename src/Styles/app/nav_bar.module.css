@@ -1,6 +1,6 @@
 .navBar{
     display: grid;
-    grid-template-columns: 5% auto 20%;
+    grid-template-columns: 5% auto auto;
     text-align: center;
     align-items: center;
 
@@ -10,8 +10,8 @@
     height: 6rem;
 
 }
-.iconCount{
-
+.searchContain{
+    height: 50%;
 }
 .icon{
     width: 50px;
