@@ -7,7 +7,10 @@ import Cards from './components/Cards.jsx';
 import {cities}  from './initial_data.js';
 import NavBar from './components/Nav';
 import { Ciudad } from './components/Ciudad';
+import Form from './components/Form_acces'
+import { Link } from 'react-router-dom';
 
+import FooterStyle from './Styles/app/footer.module.css'
 
 const api_key = process.env.REACT_APP_API_KEY; //variable de entorno
 function App() {
@@ -45,7 +48,7 @@ function App() {
   }
 
   return (
-
+    <div >
     <Routes>
       <Route path="/" element={
         <div className="App">
@@ -54,11 +57,15 @@ function App() {
             <Cards
             deleteCard={deleteCard} //todos los diferentes props se pasan así
             cities={stateCities}/>
-            </div>
+          </div>
         </div>}/>
       <Route path={`/ciudad/:id`} element={<Ciudad onCity={onCity}/>}/>
+      <Route path="/form_acces" element={<Form/>}/>
     </Routes>
-  
+    <footer className={FooterStyle.reg}>
+        <Link to="/form_acces">Registrarse</Link>
+    </footer>
+    </div>
   );
 }
 

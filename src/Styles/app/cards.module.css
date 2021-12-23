@@ -10,3 +10,11 @@
 
 
 }
+
+/*media query mobile:*/
+
+@media (max-width: 375px){
+    .cardsBar{
+        width: 100%;
+    }
+}

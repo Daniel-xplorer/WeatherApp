@@ -4,6 +4,7 @@
 }
 .input{
     border-radius: 20px;
+    width: 150px;
 }
 .button{
     border-radius: 20px;
@@ -18,3 +19,7 @@
     background-color: transparent;
     color: white;
 }
+
+/*media query:*/
+
+
